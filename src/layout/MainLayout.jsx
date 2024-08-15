@@ -8,7 +8,7 @@ import { Navbar   ,Footer } from "../components"
 function MainLayout() {
   return (
     <>
-      <header className="max-w-[1200px] mx-auto">
+      <header>
         <Navbar/>
       </header>
       <main className="max-w-[1200px] mx-auto">

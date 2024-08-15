@@ -8,13 +8,13 @@ function Navbar() {
 
   useEffect(() => {
     if (isAuthenticated !== undefined) {
-      setLoading(false);
+      setLoading(false); 
     }
   }, [isAuthenticated]);
 
   return (
     <div>
-      <div className="navbar bg-base-100 my-4">
+      <div className="navbar bg-base-100 my-4 max-w-[1200px] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -95,6 +95,7 @@ function Navbar() {
           )}
         </div>
       </div>
+      <div className="w-full bg-black h-[1px] opacity-10"></div>
     </div>
   );
 }
